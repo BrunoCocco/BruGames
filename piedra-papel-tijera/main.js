@@ -1,6 +1,7 @@
 const opciones= ["piedra","papel","tijera"]
 
-//TODO: encapsular
+//TODO: 
+
 const piedra = document.getElementById("piedra");
 const papel = document.getElementById("papel");
 const tijera = document.getElementById("tijera");
@@ -9,10 +10,10 @@ const tijera = document.getElementById("tijera");
 
 piedra.addEventListener("click", ()=>{
     const user = "piedra"
+    console.log(`usuario elige ${user}`)
     const random = Math.floor(Math.random()*opciones.length);
     let elecionPc = opciones[random]
-    console.log(elecionPc);
-
+    console.log(`pc elige ${elecionPc}`);
     if (elecionPc === user) {
         console.log("empate")
     }
