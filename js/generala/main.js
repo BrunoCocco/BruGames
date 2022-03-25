@@ -11,7 +11,7 @@ const tirarDadoRamdom = document.getElementById("tirarDado");
 console.log(tirarDadoRamdom);
 
 tirarDadoRamdom.addEventListener("click", () => {
-    for(i=0; i<6; i++){
+    for(i=0; i<5; i++){
     let jugada = new newJugada();  
     jugada.dado = Math.floor( Math.random(1,6) * opciones.length + 1);
 
